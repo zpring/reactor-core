@@ -1,0 +1,16 @@
+workflow:
+  generator:
+    project:
+      ruby:
+        version: "3.3.0"
+        gems:
+          - "asciidoctor-pdf"
+          - "rouge"
+    workflows:
+      release-train:
+        build:
+          additional-java-versions:
+            - 8
+        test:
+          additional-java-versions:
+            - 8
